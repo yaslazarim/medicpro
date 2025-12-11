@@ -86,7 +86,7 @@ model User {
   image         String?
   address       String? @default("" )
   phone         String? @default("")
-  status        Boolean
+  status        Boolean @default(true)
   timeZone      String?
   stripeCustomerId String?
   times String[] @default([])
